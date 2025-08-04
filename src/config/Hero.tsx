@@ -1,28 +1,3 @@
-/*
- * CUSTOMIZATION EXAMPLE
- *
- * Want to customize this portfolio for yourself? Here's how easy it is:
- *
- * 1. Update your personal info:
- *    name: "Your Name"
- *    title: "Your Professional Title"
- *    avatar: "/path/to/your/image.jpg"
- *
- * 2. Add your skills:
- *    skills: [
- *      { name: "Python", href: "https://python.org", component: "Python" }, // Note: You'd need to create Python component
- *      { name: "React", href: "https://react.dev", component: "ReactIcon" },
- *      { name: "Node.js", href: "https://nodejs.org", component: "NodeJs" },
- *    ]
- *
- * 3. Write your description using the template:
- *    template: "I'm a **passionate developer** who loves building apps with {skills:0} and {skills:1}. I specialize in **web development** and enjoy working with {skills:2}."
- *
- * 4. Update your social links:
- *    Just change the href values to your own social media profiles
- *
- * That's it! Your portfolio will automatically update with your information.
- */
 import Github from '@/components/svgs/Github';
 import LinkedIn from '@/components/svgs/LinkedIn';
 import Mail from '@/components/svgs/Mail';
@@ -53,7 +28,7 @@ export const skillComponents = {
 
 export const heroConfig = {
   // Personal Information
-  name: 'Ram',
+  name: 'Toluwalase Oludipe',
   title: 'A Full Stack web developer.',
   avatar: '/assets/logo.png',
 
@@ -75,9 +50,9 @@ export const heroConfig = {
       component: 'NextJs',
     },
     {
-      name: 'Bun',
-      href: 'https://bun.sh/',
-      component: 'Bun',
+      name: 'Node.js',
+      href: 'https://nodejs.org/',
+      component: 'NodeJs',
     },
     {
       name: 'PostgreSQL',
@@ -89,7 +64,7 @@ export const heroConfig = {
   // Description Configuration
   description: {
     template:
-      'I build interactive web apps using {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}. With a focus on <b>UI</b> design. Enthusiastic about <b>Three.js</b>, driven by a keen eye for design.',
+      'I build interactive web apps using {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}.With a focus on <b>UI</b> design. Enthusiastic about <b>Agentic AI</b> and <b>Automation</b>, driven by a sharp eye for intuitive, functional design.',
   },
 
   // Buttons Configuration
@@ -113,22 +88,22 @@ export const heroConfig = {
 export const socialLinks = [
   {
     name: 'X',
-    href: 'https://x.com/ramxcodes',
+    href: 'https://x.com/this_is_tolu?s=21',
     icon: <X />,
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/ramxcodes/',
+    href: 'https://www.linkedin.com/in/toluwalase-oludipe/',
     icon: <LinkedIn />,
   },
   {
     name: 'Github',
-    href: 'https://github.com/ramxcodes',
+    href: 'https://github.com/Toluddev',
     icon: <Github />,
   },
   {
     name: 'Email',
-    href: 'mailto:ramxcodes@gmail.com',
+    href: 'mailto:toluwalaseoludipe7@gmail.com',
     icon: <Mail />,
   },
 ];
