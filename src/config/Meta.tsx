@@ -94,20 +94,20 @@ export const pageMetadata: Record<string, PageMeta> = {
   },
 
   // Blog page
-  '/blog': {
-    title: 'Blog - Thoughts & Tutorials',
-    description:
-      'Read my thoughts, tutorials, and insights on engineering, programming, and web development.',
-    keywords: [
-      'blog',
-      'tutorials',
-      'programming',
-      'web development',
-      'technical writing',
-    ],
-    ogImage: '/meta/blogs.png',
-    twitterCard: 'summary_large_image',
-  },
+  // '/blog': {
+  //   title: 'Blog - Thoughts & Tutorials',
+  //   description:
+  //     'Read my thoughts, tutorials, and insights on engineering, programming, and web development.',
+  //   keywords: [
+  //     'blog',
+  //     'tutorials',
+  //     'programming',
+  //     'web development',
+  //     'technical writing',
+  //   ],
+  //   ogImage: '/meta/blogs.png',
+  //   twitterCard: 'summary_large_image',
+  // },
 
   // Resume page
   '/resume': {
