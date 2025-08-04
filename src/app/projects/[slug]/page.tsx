@@ -7,7 +7,7 @@ import { Separator } from '@/components/ui/separator';
 import { siteConfig } from '@/config/Meta';
 import {
   getProjectCaseStudyBySlug,
-  getProjectCaseStudySlugs,
+  // getProjectCaseStudySlugs,
   getProjectNavigation,
   getRelatedProjectCaseStudies,
 } from '@/lib/project';
@@ -22,13 +22,13 @@ interface ProjectCaseStudyPageProps {
 }
 
 // Generate static paths for all project case studies
-export async function generateStaticParams() {
-  const slugs = getProjectCaseStudySlugs();
+// export async function generateStaticParams() {
+//   const slugs = getProjectCaseStudySlugs();
 
-  return slugs.map((slug) => ({
-    slug,
-  }));
-}
+//   return slugs.map((slug) => ({
+//     slug,
+//   }));
+// }
 
 // Generate metadata for each project case study
 export async function generateMetadata({
