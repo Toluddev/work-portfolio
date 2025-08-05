@@ -77,6 +77,7 @@ export const heroConfig = {
     },
     {
       variant: 'default',
+      
       text: 'Get in touch',
       href: '/contact',
       icon: 'Chat',
