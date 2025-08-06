@@ -14,7 +14,6 @@ export default function About() {
       <div className="mt-8 flex flex-col gap-4 md:flex-row">
         <Image
           src="/assets/logo.png"
-          
           alt="About"
           width={100}
           height={100}
