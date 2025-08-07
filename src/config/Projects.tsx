@@ -22,20 +22,17 @@ import { Project } from '@/types/project';
 
 export const projects: Project[] = [
   {
-    title: 'NotesBuddy',
+    title: 'Oakridge',
     description:
-      'A comprehensive study platform with notes, flashcards, quizzes, AI chatbot, and interactive learning tools',
+      'A modern real estate website design and development project showcasing properties with advanced search and filter options',
     image: '/project/notesbuddy.png',
     video: 'https://ik.imagekit.io/hokb3mrdr/notesbuddy.mp4?tr=orig',
     link: 'https://notesbuddy.in',
     technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
       { name: 'React', icon: <ReactIcon key="react" /> },
       { name: 'Vercel', icon: <Vercel key="vercel" /> },
       { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
       { name: 'MDX', icon: <MDXIcon key="mdx" /> },
     ],
     github: 'https://github.com/ramxcodes/notesbuddy',
