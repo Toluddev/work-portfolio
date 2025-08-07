@@ -38,7 +38,7 @@ export const projects: Project[] = [
     title: 'Zentra',
     description:
       'Fintech Saas platform for managing personal finances, investments, and budgeting with advanced analytics',
-    image: '/project/appwrite.png',
+    image: '/project/zentra.png',
     video: 'https://ik.imagekit.io/hokb3mrdr/appwrite.mp4',
     link: 'https://zentra-delta.vercel.app/',
     technologies: [
