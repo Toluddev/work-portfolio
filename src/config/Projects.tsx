@@ -18,7 +18,7 @@ export const projects: Project[] = [
     description:
       'A modern real estate website design and development project showcasing properties with advanced search and filter options',
     image: '/project/real estate.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/notesbuddy.mp4?tr=orig',
+    video: '',
     link: 'https://real-estate-alpha-blond.vercel.app/',
     technologies: [
       { name: 'React', icon: <ReactIcon key="react" /> },
@@ -39,7 +39,7 @@ export const projects: Project[] = [
     description:
       'Fintech Saas platform for managing personal finances, investments, and budgeting with advanced analytics',
     image: '/project/zentra.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/appwrite.mp4',
+    video: '',
     link: 'https://zentra-delta.vercel.app/',
     technologies: [
       { name: 'React', icon: <ReactIcon key="react" /> },
@@ -47,17 +47,17 @@ export const projects: Project[] = [
       { name: 'Vercel', icon: <Vercel key="vercel" /> },
       { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
     ],
-    github: 'https://github.com/ramxcodes/mcp-server',
+    github: 'https://github.com/Toluddev/Zentra',
     live: 'https://zentra-delta.vercel.app/',
     details: true,
-    projectDetailsPageSlug: '/projects/appwrite-mcp-server',
+    projectDetailsPageSlug: '/projects/zentra',
     isWorking: false, // Currently in development
   },
   {
     title: 'Bupay',
     description:
       'A modern multi-bank payment platform with seamless integration, advanced security, and user-friendly interface',
-    image: '/project/bupay.png',
+    image: '/project/bank.png',
     video: '',
     link: 'https://bupay.vercel.app/',
     technologies: [
@@ -79,8 +79,8 @@ export const projects: Project[] = [
     title: 'Fitness App',
     description:
       'A comprehensive modern fitness exercise app with personalized workout plans, progress tracking, and community features - currently in development',
-    image: '/project/pasandida.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/pasandida.mp4',
+    image: '/project/fitness.png',
+    video: '',
     link: '',
     technologies: [
        { name: 'React', icon: <ReactIcon key="react" /> },
