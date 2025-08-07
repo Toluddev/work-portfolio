@@ -93,21 +93,6 @@ export const pageMetadata: Record<string, PageMeta> = {
     twitterCard: 'summary_large_image',
   },
 
-  // Blog page
-  '/blog': {
-    title: 'Blog - Thoughts & Tutorials',
-    description:
-      'Read my thoughts, tutorials, and insights on engineering, programming, and web development.',
-    keywords: [
-      'blog',
-      'tutorials',
-      'programming',
-      'web development',
-      'technical writing',
-    ],
-    ogImage: '/meta/blogs.png',
-    twitterCard: 'summary_large_image',
-  },
 
   // Resume page
   '/resume': {
@@ -125,39 +110,7 @@ export const pageMetadata: Record<string, PageMeta> = {
     twitterCard: 'summary',
   },
 
-  // Gears page
-  '/gears': {
-    title: 'Gears - My Setup & Tools',
-    description:
-      'Discover the tools, devices, and software I use to get my work done efficiently.',
-    keywords: [
-      'setup',
-      'tools',
-      'devices',
-      'software',
-      'productivity',
-      'development environment',
-    ],
-    ogImage: '/meta/gears.png',
-    twitterCard: 'summary_large_image',
-  },
 
-  // Setup page
-  '/setup': {
-    title: 'Setup Guide - VS Code Configuration',
-    description:
-      'Complete guide to setting up VS Code with my preferred configuration, extensions, and fonts for optimal development.',
-    keywords: [
-      'vscode',
-      'setup',
-      'configuration',
-      'extensions',
-      'development environment',
-      'guide',
-    ],
-    ogImage: '/meta/setup.png',
-    twitterCard: 'summary_large_image',
-  },
 };
 
 // Helper function to get metadata for a specific page
