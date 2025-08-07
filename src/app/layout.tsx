@@ -1,5 +1,4 @@
 import ChatBubble from '@/components/common/ChatBubble';
-import Footer from '@/components/common/Footer';
 import Navbar from '@/components/common/Navbar';
 import OnekoCat from '@/components/common/OnekoCat';
 import { Quote } from '@/components/common/Quote';
@@ -35,7 +34,6 @@ export default function RootLayout({
               {children}
               <OnekoCat />
               <Quote />
-              <Footer />
               <ChatBubble />
             </ReactLenis>
           </Providers>

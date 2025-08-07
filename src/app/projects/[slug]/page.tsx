@@ -12,18 +12,18 @@ import {
   getRelatedProjectCaseStudies,
 } from '@/lib/project';
 import { Metadata } from 'next';
-import Link from 'next/link'; // use this unless you're intentionally using next-view-transitions
+import { Link } from 'next-view-transitions';
 import { notFound } from 'next/navigation';
 
 interface ProjectCaseStudyPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
 // Generate static paths for all project case studies
 export async function generateStaticParams() {
-  const slugs = await getProjectCaseStudySlugs();
+  const slugs = getProjectCaseStudySlugs();
 
   return slugs.map((slug) => ({
     slug,
@@ -33,10 +33,9 @@ export async function generateStaticParams() {
 // Generate metadata for each project case study
 export async function generateMetadata({
   params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const caseStudy = await getProjectCaseStudyBySlug(params.slug);
+}: ProjectCaseStudyPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const caseStudy = await getProjectCaseStudyBySlug(slug);
 
   if (!caseStudy || !caseStudy.frontmatter.isPublished) {
     return {
@@ -68,14 +67,15 @@ export async function generateMetadata({
 export default async function ProjectCaseStudyPage({
   params,
 }: ProjectCaseStudyPageProps) {
-  const caseStudy = await getProjectCaseStudyBySlug(params.slug);
+  const { slug } = await params;
+  const caseStudy = await getProjectCaseStudyBySlug(slug);
 
   if (!caseStudy || !caseStudy.frontmatter.isPublished) {
     notFound();
   }
 
-  const navigation = await getProjectNavigation(params.slug);
-  const relatedProjects = await getRelatedProjectCaseStudies(params.slug, 2);
+  const navigation = await getProjectNavigation(slug);
+  const relatedProjects = await getRelatedProjectCaseStudies(slug, 2);
 
   return (
     <Container className="py-16">
@@ -125,13 +125,14 @@ export default async function ProjectCaseStudyPage({
                               className={`inline-block rounded px-2 py-1 text-xs font-medium ${
                                 project.frontmatter.status === 'completed'
                                   ? 'bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400'
-                                  : project.frontmatter.status ===
-                                    'in-progress'
-                                  ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400'
-                                  : 'bg-gray-100 text-gray-800 dark:bg-gray-900/30 dark:text-gray-400'
+                                  : project.frontmatter.status === 'in-progress'
+                                    ? 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400'
+                                    : 'bg-gray-100 text-gray-800 dark:bg-gray-900/30 dark:text-gray-400'
                               }`}
                             >
-                              {project.frontmatter.status.charAt(0).toUpperCase() +
+                              {project.frontmatter.status
+                                .charAt(0)
+                                .toUpperCase() +
                                 project.frontmatter.status.slice(1)}
                             </div>
                           </div>
@@ -140,14 +141,16 @@ export default async function ProjectCaseStudyPage({
                           {project.frontmatter.description}
                         </p>
                         <div className="flex flex-wrap gap-1">
-                          {project.frontmatter.technologies.slice(0, 3).map((tech) => (
-                            <span
-                              key={tech}
-                              className="rounded bg-muted px-2 py-1 text-xs"
-                            >
-                              {tech}
-                            </span>
-                          ))}
+                          {project.frontmatter.technologies
+                            .slice(0, 3)
+                            .map((tech) => (
+                              <span
+                                key={tech}
+                                className="rounded bg-muted px-2 py-1 text-xs"
+                              >
+                                {tech}
+                              </span>
+                            ))}
                           {project.frontmatter.technologies.length > 3 && (
                             <span className="rounded bg-muted px-2 py-1 text-xs">
                               +{project.frontmatter.technologies.length - 3}
