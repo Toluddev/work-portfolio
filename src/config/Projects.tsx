@@ -57,9 +57,9 @@ export const projects: Project[] = [
     title: 'Bupay',
     description:
       'A modern multi-bank payment platform with seamless integration, advanced security, and user-friendly interface',
-    image: '/project/syncify.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/syncify.mp4',
-    link: 'https://syncify.rocks',
+    image: '/project/bupay.png',
+    video: '',
+    link: 'https://bupay.vercel.app/',
     technologies: [
       { name: 'React', icon: <ReactIcon key="react" /> },
       { name: 'Next.js', icon: <NextJs key="nextjs" /> },
