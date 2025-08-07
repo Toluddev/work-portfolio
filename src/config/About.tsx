@@ -4,7 +4,6 @@ import MongoDB from '@/components/technologies/MongoDB';
 import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
 import TypeScript from '@/components/technologies/TypeScript';
 
@@ -17,7 +16,6 @@ export const mySkills = [
   <NextJs key="nextjs" />,
   <NodeJs key="nodejs" />,
   <PostgreSQL key="postgresql" />,
-  <Prisma key="prisma" />,
 ];
 
 export const about = {
