@@ -77,7 +77,7 @@ export const heroConfig = {
     },
     {
       variant: 'default',
-      
+
       text: 'Get in touch',
       href: '/contact',
       icon: 'Chat',
@@ -90,6 +90,7 @@ export const socialLinks = [
   {
     name: 'X',
     href: 'https://x.com/this_is_tolu?s=21',
+    
     icon: <X />,
   },
   {
