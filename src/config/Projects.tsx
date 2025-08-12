@@ -54,6 +54,46 @@ export const projects: Project[] = [
     isWorking: false, // Currently in development
   },
   {
+    title: 'CryptoXchange',
+    description:
+      'A modern cryptocurrency exchange platform with real-time trading, portfolio management, and market analytics',
+    image: '/project/CryptoXchange.png',
+    video: '',
+    link: 'https://bupay.vercel.app/',
+    technologies: [
+      { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
+      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
+      { name: 'Vercel', icon: <Vercel key="vercel" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
+       { name: 'Appwrite', icon: <Appwrite key="appwrite" /> },
+    ],
+    github: '',
+    live: '',
+    details: true,
+    projectDetailsPageSlug: '',
+    isWorking: false,
+  },
+    {
+    title: 'Fitness App',
+    description:
+      'A comprehensive modern fitness exercise app with personalized workout plans, progress tracking, and community features - currently in development',
+    image: '/project/fitness.png',
+    video: '',
+    link: '',
+    technologies: [
+       { name: 'React', icon: <ReactIcon key="react" /> },
+      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
+      { name: 'Github', icon: <Github key="github" /> },
+      { name: 'Motion', icon: <Motion key="motion" /> },
+    ],
+    live: '',
+    details: true,
+    projectDetailsPageSlug: '',
+    isWorking: false, // Currently in development
+  },
+  {
     title: 'Bupay',
     description:
       'A modern multi-bank payment platform with seamless integration, advanced security, and user-friendly interface',
@@ -74,23 +114,5 @@ export const projects: Project[] = [
     details: true,
     projectDetailsPageSlug: '',
     isWorking: false,
-  },
-  {
-    title: 'Fitness App',
-    description:
-      'A comprehensive modern fitness exercise app with personalized workout plans, progress tracking, and community features - currently in development',
-    image: '/project/fitness.png',
-    video: '',
-    link: '',
-    technologies: [
-       { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Github', icon: <Github key="github" /> },
-      { name: 'Motion', icon: <Motion key="motion" /> },
-    ],
-    live: '',
-    details: true,
-    projectDetailsPageSlug: '',
-    isWorking: false, // Currently in development
   },
 ];
