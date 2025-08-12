@@ -20,5 +20,5 @@ export const mySkills = [
 
 export const about = {
   name: 'Toluwalase Oludipe',
-  description: `I'm a Full Stack web developer and Open Source Contributor, I love building products to solve real-world problems. I'm specialized in building MVP's.`,
+  description: `I'm a Full-Stack Web Developer & Automation Engineer , I love building products to solve real-world problems. I'm specialized in building MVP's.`,
 };
