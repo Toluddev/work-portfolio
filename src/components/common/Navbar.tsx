@@ -17,6 +17,7 @@ export default function Navbar() {
               src={navbarConfig.logo.src}
               alt={navbarConfig.logo.alt}
               width={navbarConfig.logo.width}
+              
               height={navbarConfig.logo.height}
             />
           </Link>
