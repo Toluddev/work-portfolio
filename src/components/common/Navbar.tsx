@@ -17,7 +17,7 @@ export default function Navbar() {
               src={navbarConfig.logo.src}
               alt={navbarConfig.logo.alt}
               width={navbarConfig.logo.width}
-              
+
               height={navbarConfig.logo.height}
             />
           </Link>
@@ -26,6 +26,7 @@ export default function Navbar() {
               <Link
                 className="transition-all duration-300 ease-in-out hover:underline hover:decoration-2 hover:underline-offset-4"
                 key={item.label}
+                
                 href={item.href}
               >
                 {item.label}
