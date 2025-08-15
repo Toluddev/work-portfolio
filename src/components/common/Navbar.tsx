@@ -26,7 +26,6 @@ export default function Navbar() {
               <Link
                 className="transition-all duration-300 ease-in-out hover:underline hover:decoration-2 hover:underline-offset-4"
                 key={item.label}
-                
                 href={item.href}
               >
                 {item.label}
